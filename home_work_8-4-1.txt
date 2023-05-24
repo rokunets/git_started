@@ -1,0 +1,118 @@
+1) Определить имя папки, в которой вы находитесь
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ pwd
+/c/Users/vers8/Desktop/home_work/git_training/test
+
+2) Создать папку с именем test1
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ mkdir test1
+
+3) Перейти в папку test1
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ cd test1
+
+4) Создать файл 1,2 и 3 внутри каталога test1
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test1 (main)
+$ touch file1.txt file2.txt file3.txt
+
+5) Проверить содержимое каталога test1
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test1 (main)
+$ ls
+file1.txt  file2.txt  file3.txt
+
+6) Создать папку test2 внутри домашней директории
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test1 (main)
+$ cd ..
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ mkdir test2
+
+7) Удалить папку test2
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ rmdir test2
+
+8) Удалить файл 2
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ cd test1
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test1 (main)
+$ rm file2.txt
+
+9) Создать папку test3 и добавить в нее два файла
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ mkdir test3
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ cd test3
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test3 (main)
+$ touch file1.txt file2.txt
+
+10) Удалить папку test3
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test3 (main)
+$ cd ..
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ rm -rf test3
+
+11) Создать папку test4
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ mkdir test4
+
+12) Переместить файлы 1 и 3 в папку test4
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ mv test1/file1.txt test4
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ mv test1/file3.txt test4
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
+$ cd test4
+
+13) Добавить в файл 1 три строки со словами line
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ echo line > file1.txt
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ echo line >> file1.txt
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ echo line >> file1.txt
+
+14) Посмотреть содержимое файла 1
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ cat file1.txt
+line
+line
+line
+
+15) Добавьте в файл 3 три строки со словами line
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ echo line > file3.txt
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ echo line >> file3.txt
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ echo line >> file3.txt
+
+16) Просмотрите содержимое двух файлов (1 и 3) сразу
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ cat file1.txt file3.txt
+line
+line
+line
+line
+line
+line
+
+17) Используя один из редакторов замените все строки
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ nano file1.txt
+
+vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test/test4 (main)
+$ cat file1.txt
+create
+create
+create
+
