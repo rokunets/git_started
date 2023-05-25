@@ -133,5 +133,18 @@ $ curl https://petstore.swagger.io/v2/pet/findByStatus?status=available
 
 16) Используя POST и команду curl, создайте нового пользователя на https://petstore.swagger.io/
 vankee@vanbai-pc MINGW64 ~/Desktop/home_work/git_training/test (main)
-$ curl -X POST https://petstore.swagger.io/v2/user --data "id=1305" --data "username=Hawk" --data "firstName=lincoln" --data "lastName=hawk" --data "email=hawk@gmail.com" --data "password=131313" --data "phone=5550001" --data "userStatus=1"
-{"code":415,"type":"unknown","message":"com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type application/x-www-form-urlencoded was not found.\nThe registered message body readers compatible with the MIME media type are:\n*/* ->\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.StringProvider\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\n  com.sun.jersey.core.impl.provider.entity.FileProvider\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\napplication/x-www-form-urlencoded ->\n  com.sun.jersey.core.impl.provider.entity.FormProvider\n  com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider\n"}
+$ curl -X 'POST' \
+  'https://petstore.swagger.io/v2/user' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 2311,
+  "username": "Eric",
+  "firstName": "Eric",
+  "lastName": "Adams",
+  "email": "manowar@gmail.com",
+  "password": "131313",
+  "phone": "5550001",
+  "userStatus": 1
+}'
+{"code":200,"type":"unknown","message":"2311"}
