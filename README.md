@@ -1,1 +1,2 @@
-Целями данного домашнего задания было изучить, запомнить и научиться отправлять команды bash/git.
+#Bash/git
+The purpose of this homework assignment was to study the bash/git commands.
