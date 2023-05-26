@@ -1,2 +1,11 @@
 #Bash/git
-The purpose of this homework assignment was to study the bash/git commands.
+Целью задания было разобраться и научиться отправлять команды git-bash.
+
+Перед этим необходимо было:
+1) установить git bash;
+2) создать профил github;
+3) настроить git bash (git config);
+4) настроить терминал VScode.
+
+Задание с решением можно найти во вложенных файлах.
+
